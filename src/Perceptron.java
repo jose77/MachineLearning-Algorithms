@@ -32,11 +32,7 @@ public class Perceptron {
 		else
 			return -1;
 	}
-	/**
-	 * learning process
-	 * @param
-	 *  
-	 */
+
 	public void learning(){
 		boolean stop=false;
 		while(stop==false){
