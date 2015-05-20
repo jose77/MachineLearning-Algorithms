@@ -1,4 +1,4 @@
-
+package perceptron;
 public class Perceptron {
 	double[] w;
 	double b;
