@@ -62,9 +62,16 @@ public class KDTree{
 	 */
 	public Node getNearestNeighbor(Node newNode,int k){
 		BinaryTree<Node> nstNeighbor=getLeaf(newNode);
+		double nstDist=getDistance(nstNeighbor.data,newNode);
 		
 	}
 	
+	
+	/**
+	 * 寻找新节点落入的初始区域
+	 * @param newNode
+	 * @return
+	 */
 	BinaryTree<Node> getLeaf(Node newNode){
 		BinaryTree<Node> curr=tree;
 		int depth=0;
