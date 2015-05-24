@@ -5,19 +5,22 @@ public class BinaryTree<T>{
 	BinaryTree<T> parent;
 	BinaryTree<T> left;
 	BinaryTree<T> right;
+	int dim=0;//ªÆ∑÷Œ¨∂»
 	
 	public BinaryTree(){
 		data=null;
 		parent=null;
 		left=null;
 		right=null;
+		dim=0;
 	}
 	
-	public void makeRoot(T data){
+	public void makeRoot(T data,int dim){
 		if(data!=null){
 			throw new TreeViolateException();
 		}
 		this.data=data;
+		this.dim=dim;
 	}
 	public void attachLeft(BinaryTree<T> tree){
 		if(tree.left!=null){
